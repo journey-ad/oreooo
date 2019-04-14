@@ -25,7 +25,9 @@ Hey! it's your Oreooo.
 
 ## Contributing a translation
 
-The text in Oreooo is in Chinese by default. You can translate it in your language. Just edit your language pack in `src/locales` and  `pull requests` to me. Thanks!
+The text in Oreooo is in Chinese by default. And you can translate it in your language.
+
+Just edit your language pack in `src/locales` and  `pull requests` to me.
 
 ## License
 
