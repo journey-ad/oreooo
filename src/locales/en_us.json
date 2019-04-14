@@ -1,0 +1,24 @@
+{
+  "basic": {
+    "o": "O | o",
+    "r": "Re | re",
+    "and": "-"
+  },
+  "tooltip": "Keyboard shortcuts: <br>o/r : Input 'O' or 'RE'<br>-/Space : Input Space<br>Enter : Generate<br>Backspace : Back",
+  "input": {
+    "meta": "I'd like:",
+    "placeholder": "Oreo...",
+    "generate": "Generate",
+    "btn": {
+      "o": "O",
+      "r": "R",
+      "and": "and"
+    }
+  },
+  "output": {
+    "meta": "Here's your",
+    "save": "Save Image",
+    "show": "Show Image",
+    "back": "Back"
+  }
+}

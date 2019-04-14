@@ -1,0 +1,24 @@
+{
+  "basic": {
+    "o": "O | o",
+    "r": "Re | re",
+    "and": "-"
+  },
+  "tooltip": "Tastaturkürzel: <br>o/r : 'O' oder 'RE'<br>-/Leerzeichen : Leerzeichen<br>Enter : Generieren<br>Rücktaste : Zurück",
+  "input": {
+    "meta": "Ich möchte ein:",
+    "placeholder": "Oreo...",
+    "generate": "Generieren",
+    "btn": {
+      "o": "O",
+      "r": "R",
+      "and": "und"
+    }
+  },
+  "output": {
+    "meta": "Hier ist dein",
+    "save": "Bild sichern",
+    "show": "Bild anzeigen",
+    "back": "Zurück"
+  }
+}
