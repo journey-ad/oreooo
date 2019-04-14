@@ -9,8 +9,8 @@
       >{{key}}</li>
     </ul>
     <div class="meta">
-      <a href="https://imjad.cn" target="_blang">journey-ad</a>
-      <a href="https://github.com/journey-ad/oreooo" target="_blang">Github</a>
+      <a href="https://imjad.cn" target="_blank">journey-ad</a>
+      <a href="https://github.com/journey-ad/oreooo" target="_blank">Github</a>
     </div>
   </footer>
 </template>
