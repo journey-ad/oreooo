@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "9bc0acbf8bf67e79336a",
-    "url": "./css/app.b28dfba7.css"
+    "revision": "ad149eb55f4517ce4e8c",
+    "url": "./css/app.7357a848.css"
   },
   {
-    "revision": "9bc0acbf8bf67e79336a",
-    "url": "./js/app.dab099e9.js"
+    "revision": "ad149eb55f4517ce4e8c",
+    "url": "./js/app.bd3c0da7.js"
   },
   {
     "revision": "3d342a8cdfe6b4e660d0",
@@ -20,20 +20,20 @@ self.__precacheManifest = [
     "url": "./img/O.86adc167.png"
   },
   {
-    "revision": "756f1d7e1baaec13142c854251b5b3c1",
-    "url": "./fonts/Seto.756f1d7e.eot"
+    "revision": "2335b0a4aa639072889ebae2231927fe",
+    "url": "./fonts/Seto.2335b0a4.ttf"
   },
   {
-    "revision": "1f51690c34e46733fce1ae496f94a863",
-    "url": "./fonts/Seto.1f51690c.woff"
+    "revision": "7a1c4186053f216d3fcadab087bbcc8a",
+    "url": "./fonts/Seto.7a1c4186.woff"
   },
   {
-    "revision": "1396d8cdbd360f25314901472526c55d",
-    "url": "./fonts/Seto.1396d8cd.ttf"
+    "revision": "d97491252353eddcb7753570a79b707d",
+    "url": "./fonts/Seto.d9749125.eot"
   },
   {
-    "revision": "d0ba91dcd81ffed933e9f4e5f657bb1d",
-    "url": "./img/Seto.d0ba91dc.svg"
+    "revision": "b2a6ab43d5bd4f48f5b7cc57f5ec85a4",
+    "url": "./img/Seto.b2a6ab43.svg"
   },
   {
     "revision": "0ecc63ff81b3cef910615fb1ace7cc11",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "./img/tip.8274afb0.svg"
   },
   {
-    "revision": "264cd9d8c69303a36dba3cfe7a4706ad",
+    "revision": "c25b454268140ece2a93b9e0d59b499e",
     "url": "./index.html"
   },
   {
