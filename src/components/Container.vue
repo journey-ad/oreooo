@@ -267,7 +267,7 @@ export default {
     background-repeat: no-repeat;
 
     &:hover {
-      opacity: 0.8;
+      opacity: 0.6;
       .tooltiptext {
         visibility: visible;
       }
@@ -277,6 +277,7 @@ export default {
       visibility: hidden;
       white-space: nowrap;
       font-size: 1.4rem;
+      min-width: 12rem;
       background-color: var(--black-opacity);
       color: var(--white);
       text-align: left;
@@ -317,7 +318,7 @@ export default {
       color: var(--white);
     }
 
-    .small {
+    &.small {
       font-size: 1.8rem;
     }
   }
