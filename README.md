@@ -23,11 +23,33 @@ Hey! it's your Oreooo.
 | Enter     | Generate                
 | Backspace | Back                        |
 
+## Usage
+
+### Install
+
+```shell
+$ git clone https://github.com/journey-ad/oreooo.git
+$ cd oreooo
+$ yarn install
+```
+
+### Run with dev
+
+```shell
+$ yarn serve
+```
+
+### Build
+
+```shell
+$ yarn build
+```
+
 ## Contributing a translation
 
 The text in Oreooo is in Chinese by default. And you can translate it in your language.
 
-Just edit your language pack in `src/locales` and  `pull requests` to me.
+Just edit your language json file in `src/locales` and  **pull requests** to me.
 
 ## License
 
