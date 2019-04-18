@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "50fe0703ea5e2f04a0a4",
+    "revision": "b8626793db77e202ef62",
     "url": "./css/app.aa5c6fc5.css"
   },
   {
-    "revision": "50fe0703ea5e2f04a0a4",
-    "url": "./js/app.bd3c0da7.js"
+    "revision": "b8626793db77e202ef62",
+    "url": "./js/app.6935612f.js"
   },
   {
-    "revision": "3d342a8cdfe6b4e660d0",
-    "url": "./js/chunk-vendors.dbacda76.js"
+    "revision": "b35f9fe2359f45124500",
+    "url": "./js/chunk-vendors.98d00a3c.js"
   },
   {
     "revision": "f55d75eb5275de80d836d268cb71ac29",
@@ -20,16 +20,16 @@ self.__precacheManifest = [
     "url": "./img/O.86adc167.png"
   },
   {
-    "revision": "401d3807883669d0101cab4e5e361849",
-    "url": "./fonts/Seto.401d3807.woff"
+    "revision": "98f7e6640de0050107f56b8509b8e551",
+    "url": "./fonts/Seto.98f7e664.ttf"
   },
   {
     "revision": "e908f02612700c8c4e7b552f0a7c8856",
     "url": "./fonts/Seto.e908f026.eot"
   },
   {
-    "revision": "98f7e6640de0050107f56b8509b8e551",
-    "url": "./fonts/Seto.98f7e664.ttf"
+    "revision": "401d3807883669d0101cab4e5e361849",
+    "url": "./fonts/Seto.401d3807.woff"
   },
   {
     "revision": "43f8ed00440e70f0a33f5fdb2b4ec7ad",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "./img/tip.8274afb0.svg"
   },
   {
-    "revision": "bbb509cbf2b0f4f8715f44ef42e0c62e",
+    "revision": "8efcd296a12a3b3d5385834feebcc36b",
     "url": "./index.html"
   },
   {
