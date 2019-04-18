@@ -8158,6 +8158,11 @@ vue@^2.5.16, vue@^2.6.10:
   resolved "http://registry.npm.taobao.org/vue/download/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha1-pysaQqTYKnIepDjRtr9V5mGVxjc=
 
+vuex@^3.1.0:
+  version "3.1.0"
+  resolved "http://registry.npm.taobao.org/vuex/download/vuex-3.1.0.tgz#634b81515cf0cfe976bd1ffe9601755e51f843b9"
+  integrity sha1-Y0uBUVzwz+l2vR/+lgF1XlH4Q7k=
+
 watchpack@^1.5.0:
   version "1.6.0"
   resolved "http://registry.npm.taobao.org/watchpack/download/watchpack-1.6.0.tgz#4bc12c2ebe8aa277a71f1d3f14d685c7b446cd00"

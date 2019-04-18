@@ -1,6 +1,6 @@
 <template>
-  <div class="container" v-show="!state.loading">
-    <div class="design" v-show="!state.loading && !state.output">
+  <div class="container" v-show="!show.loading">
+    <div class="design" v-show="!show.loading && !show.output">
       <div class="icon tooltip">
         <span class="tooltiptext" v-html="$t('tooltip')"></span>
       </div>
@@ -26,7 +26,7 @@
       </div>
       <div @click="generateImage()" class="index-btn" v-t="'input.generate'"></div>
     </div>
-    <div class="output" v-show="!state.loading && state.output">
+    <div class="output" v-show="!show.loading && show.output">
       <div class="title">
         <div class="meta" v-t="'output.meta'"></div>
         <div class="output str">{{oreoStr}}</div>
@@ -42,24 +42,13 @@
 </template>
 
 <script>
+import { mapState, mapMutations } from 'vuex';
 export default {
   data () {
     return {
       oreoArr: [],
       imgUrl: ''
     };
-  },
-  props: {
-    state: {
-      type: Object,
-      default: () => {
-        return {
-          loading: true,
-          output: false
-        };
-      }
-    },
-    images: [Object]
   },
   computed: {
     oreoStr () {
@@ -81,12 +70,16 @@ export default {
         }
       });
       return str;
-    }
+    },
+    ...mapState({
+      images: state => state.images,
+      show: state => state.show
+    })
   },
   methods: {
     keyEvent (ev) {
       // console.log(ev.keyCode);
-      if (!this.state.loading && !this.state.output) {
+      if (!this.show.loading && !this.show.output) {
         // input Page
         switch (ev.keyCode) {
         case 79:
@@ -108,7 +101,7 @@ export default {
         default:
           break;
         }
-      } else if (!this.state.loading && this.state.output) {
+      } else if (!this.show.loading && this.show.output) {
         // output Page
         if (ev.keyCode === 8) {
           this.backToInput();
@@ -170,7 +163,7 @@ export default {
     generateImage () {
       if (this.oreoArr.length > 0) {
         const that = this;
-        this.$emit('setState', { loading: true, output: false });
+        this.setShow({ loading: true, output: false });
         const oreoArr = this.oreoArr;
         const drawArr = [];
 
@@ -209,7 +202,7 @@ export default {
 
         this.imgUrl = canvas.toDataURL('image/png');
         setTimeout(() => {
-          that.$emit('setState', { loading: false, output: true });
+          that.setShow({ loading: false, output: true });
         }, 1000);
       }
     },
@@ -223,7 +216,7 @@ export default {
       window.open(this.imgUrl);
     },
     backToInput () {
-      this.state.output = false;
+      this.setShow({ loading: false, output: false });
       this.oreoArr = [];
       this.imgUrl = '';
     },
@@ -231,7 +224,8 @@ export default {
       const u = window.navigator.userAgent;
       const isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
       return isiOS;
-    }
+    },
+    ...mapMutations(['setShow'])
   },
   mounted () {
     const that = this;

@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer" v-show="!state.loading && !state.output">
+  <footer class="footer" v-show="!show.loading && !show.output">
     <ul class="lang-list">
       <li
         class="lang"
@@ -16,22 +16,20 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
 export default {
-  props: {
-    state: {
-      type: Object,
-      default: () => {
-        return {
-          loading: true,
-          output: false
-        };
-      }
-    },
-    languages: [Object]
+  data () {
+    return {
+      languages: this.$store.state.languages
+    };
   },
+  computed: mapState({
+    show: state => state.show,
+    lang: state => state.lang
+  }),
   methods: {
     changeLang (lang) {
-      localStorage.lang = lang;
+      this.$store.commit('changeLang', lang);
       this.$i18n.locale = lang;
     }
   }

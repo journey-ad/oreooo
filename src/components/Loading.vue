@@ -1,23 +1,51 @@
 <template>
   <transition name="bounce">
-    <div class="content-loading" v-show="state.loading">
+    <div class="content-loading" v-show="show.loading">
       <img class="loading-img" src="../assets/images/oreo.png" alt="loading">
     </div>
   </transition>
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
 export default {
-  props: {
-    state: {
-      type: Object,
-      default: () => {
-        return {
-          loading: true,
-          output: false
-        };
-      }
+  computed: {
+    show () {
+      return this.$store.state.show;
     }
+  },
+  methods: {
+    loadImages () {
+      const that = this;
+      // Set background color
+      const bgColorArr = this.$store.state.bgColorArr;
+      document.documentElement.style.setProperty(
+        '--bg-color',
+        bgColorArr[Math.floor(Math.random() * bgColorArr.length)]
+      );
+      const cacheImages = {};
+      const sources = this.$store.state.sources;
+      let index = 0;
+      const attCount = Object.getOwnPropertyNames(sources).length;
+      for (const imgItem in sources) {
+        cacheImages[imgItem] = new Image();
+        cacheImages[imgItem].onload = function () {
+          index++;
+          if (index === attCount - 1) {
+            that.setImageCache(cacheImages);
+            window.setTimeout(() => {
+              that.setShow({ loading: false, output: false });
+            }, 1000);
+            console.log('Image loaded.');
+          }
+        };
+        cacheImages[imgItem].src = sources[imgItem];
+      }
+    },
+    ...mapMutations(['setImageCache', 'setShow', 'changeLang'])
+  },
+  created () {
+    this.loadImages();
   }
 };
 </script>
