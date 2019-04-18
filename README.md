@@ -4,7 +4,7 @@ Hey! it's your Oreooo.
 
 嘿！你的奥利奥利奥
 
-![ScreenShot](src/assets/screenshot.png)
+![ScreenShot](screenshot.png)
 
 
 
